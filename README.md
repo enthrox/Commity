@@ -55,16 +55,6 @@ Visit [http://localhost:3000](http://localhost:3000) to view your app.
 
 ---
 
-## 🌐 Deployment
-
-### **Netlify**
-1. Connect your GitHub repo to Netlify.
-2. Set environment variables in Netlify dashboard (from `.env.example`).
-3. Set build command: `npm run build` or `yarn build`.
-4. Set publish directory: `.next` (for SSR) or `out` (for static export).
-
----
-
 ## 📁 Project Structure
 ```
 app/            # Next.js app directory
@@ -89,8 +79,6 @@ lib/            # Utility functions and libraries
 ## 🛡️ License
 
 This project is open source under the [MIT License](LICENSE).
-
----
 
 ## 👤 Owner
 
