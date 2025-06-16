@@ -54,14 +54,11 @@ export function Hero() {
             {!session ? (
               <Button
                 size="lg"
-                asChild
                 className="bg-black hover:bg-gray-800 text-white px-8 py-4 text-lg transform hover:scale-105 transition-all duration-300 hover:shadow-lg"
                 onClick={() => signIn("github")}
               >
-                <Link href="#" className="flex items-center space-x-2">
-                  <Github className="w-5 h-5" />
-                  <span>Login with GitHub</span>
-                </Link>
+                <Github className="w-5 h-5" />
+                <span>Login with GitHub</span>
               </Button>
             ) : (
               <Button

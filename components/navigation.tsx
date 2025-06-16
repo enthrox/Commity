@@ -51,7 +51,7 @@ export function Navigation() {
               href="/documentation"
               className="text-gray-700 hover:text-black transition-all duration-300 relative group"
             >
-              Documentation
+              Docs
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
@@ -69,14 +69,11 @@ export function Navigation() {
             {!session ? (
               <Button
                 variant="outline"
-                asChild
                 className="hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-105"
                 onClick={() => signIn("github")}
               >
-                <Link href="#" className="flex items-center space-x-2">
-                  <Github className="w-4 h-4" />
-                  <span>Login with GitHub</span>
-                </Link>
+                <Github className="w-4 h-4" />
+                <span>Login with GitHub</span>
               </Button>
             ) : (
               <DropdownMenu>
@@ -164,14 +161,11 @@ export function Navigation() {
               {!session ? (
                 <Button
                   variant="outline"
-                  asChild
                   className="w-full"
                   onClick={() => signIn("github")}
                 >
-                  <Link href="#" className="flex items-center justify-center space-x-2">
-                    <Github className="w-4 h-4" />
-                    <span>Login with GitHub</span>
-                  </Link>
+                  <Github className="w-4 h-4" />
+                  <span>Login with GitHub</span>
                 </Button>
               ) : (
                 <Button

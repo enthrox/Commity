@@ -61,7 +61,7 @@ export function Login() {
             </CardHeader>
             <CardContent className="space-y-6">
               <Button
-                onClick={handleGitHubLogin}
+                onClick={() => signIn("github")}
                 disabled={isLoading}
                 className="w-full bg-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 text-white h-12 text-lg transition-all duration-300 transform hover:scale-105"
               >
